@@ -9,63 +9,63 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Background System - Soft Pastel */
-    --background: 330 25% 96%;
-    --background-secondary: 330 20% 93%;
-    --foreground: 220 15% 25%;
+    /* Background System - Pure B&W */
+    --background: 0 0% 100%;
+    --background-secondary: 0 0% 98%;
+    --foreground: 0 0% 10%;
 
-    /* Card System - Gentle Pastels */
-    --card: 0 0% 98%;
-    --card-secondary: 330 15% 95%;
-    --card-foreground: 220 15% 25%;
-    --card-border: 320 20% 85%;
+    /* Card System - Clean Grays */
+    --card: 0 0% 100%;
+    --card-secondary: 0 0% 96%;
+    --card-foreground: 0 0% 10%;
+    --card-border: 0 0% 88%;
 
     /* Interactive Elements */
-    --popover: 0 0% 98%;
-    --popover-foreground: 220 15% 25%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
 
-    /* Brand Colors - Pastel Theme */
-    --primary: 280 45% 75%;
-    --primary-dark: 280 45% 65%;
-    --primary-foreground: 0 0% 98%;
+    /* Brand Colors - Monochrome */
+    --primary: 0 0% 15%;
+    --primary-dark: 0 0% 5%;
+    --primary-foreground: 0 0% 100%;
 
-    /* Secondary System - Soft Pink */
-    --secondary: 320 25% 88%;
-    --secondary-foreground: 220 15% 25%;
+    /* Secondary System - Light Gray */
+    --secondary: 0 0% 93%;
+    --secondary-foreground: 0 0% 15%;
 
-    /* Muted System - Neutral Pastels */
-    --muted: 320 15% 90%;
-    --muted-foreground: 220 10% 55%;
+    /* Muted System - Mid Grays */
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 45%;
 
-    /* Accent System - Soft Mint */
-    --accent: 140 35% 75%;
-    --accent-foreground: 220 15% 25%;
+    /* Accent System - Dark Gray */
+    --accent: 0 0% 25%;
+    --accent-foreground: 0 0% 100%;
 
-    /* Status Colors - Pastel Variants */
-    --destructive: 355 55% 75%;
-    --destructive-foreground: 0 0% 98%;
-    --success: 140 40% 75%;
-    --warning: 45 55% 75%;
+    /* Status Colors - Grayscale */
+    --destructive: 0 0% 20%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 0 0% 30%;
+    --warning: 0 0% 35%;
 
     /* Form Elements */
-    --border: 320 20% 85%;
-    --input: 330 15% 95%;
-    --ring: 280 45% 75%;
+    --border: 0 0% 88%;
+    --input: 0 0% 96%;
+    --ring: 0 0% 15%;
 
     /* Spacing & Effects */
     --radius: 0.75rem;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     
-    /* Gradients - Soft Pastel Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--background-secondary)) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--card-secondary)) 100%);
+    /* Gradients - Monochrome Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(0 0% 15%), hsl(0 0% 25%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(0 0% 98%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(0 0% 96%) 100%);
     
-    /* Shadows - Gentle Pastel Shadows */
-    --shadow-sm: 0 2px 8px hsl(280 45% 75% / 0.08);
-    --shadow-md: 0 4px 20px hsl(280 45% 75% / 0.12);
-    --shadow-lg: 0 8px 40px hsl(280 45% 75% / 0.15);
-    --shadow-glow: 0 0 30px hsl(280 45% 75% / 0.25);
+    /* Shadows - Clean Grayscale Shadows */
+    --shadow-sm: 0 2px 8px hsl(0 0% 0% / 0.05);
+    --shadow-md: 0 4px 20px hsl(0 0% 0% / 0.08);
+    --shadow-lg: 0 8px 40px hsl(0 0% 0% / 0.12);
+    --shadow-glow: 0 0 30px hsl(0 0% 0% / 0.15);
   }
 }
 
