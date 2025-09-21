@@ -1,12 +1,45 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navigation from "@/components/Navigation";
+import Hero from "@/components/Hero";
+import Experience from "@/components/Experience";
+import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
+import Certifications from "@/components/Certifications";
+import Contact from "@/components/Contact";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <Navigation />
+      <main>
+        <section id="hero">
+          <Hero />
+        </section>
+        <section id="experience">
+          <Experience />
+        </section>
+        <section id="skills">
+          <Skills />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
+        <section id="education">
+          <Certifications />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
+      </main>
+      
+      {/* Footer */}
+      <footer className="bg-background border-t border-card-border py-8">
+        <div className="container mx-auto px-4">
+          <div className="text-center text-muted-foreground">
+            <p>&copy; 2025 Lukman Hafizi Bin Ramli. All rights reserved.</p>
+            <p className="text-sm mt-2">DevOps Engineer | Network Engineer | IT Support Specialist</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
