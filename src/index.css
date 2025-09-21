@@ -9,63 +9,63 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Background System */
-    --background: 220 30% 5%;
-    --background-secondary: 220 25% 8%;
-    --foreground: 210 25% 95%;
+    /* Background System - Soft Pastel */
+    --background: 330 25% 96%;
+    --background-secondary: 330 20% 93%;
+    --foreground: 220 15% 25%;
 
-    /* Card System */
-    --card: 220 25% 8%;
-    --card-secondary: 220 20% 12%;
-    --card-foreground: 210 25% 95%;
-    --card-border: 220 15% 20%;
+    /* Card System - Gentle Pastels */
+    --card: 0 0% 98%;
+    --card-secondary: 330 15% 95%;
+    --card-foreground: 220 15% 25%;
+    --card-border: 320 20% 85%;
 
     /* Interactive Elements */
-    --popover: 220 25% 8%;
-    --popover-foreground: 210 25% 95%;
+    --popover: 0 0% 98%;
+    --popover-foreground: 220 15% 25%;
 
-    /* Brand Colors - Tech Blue Theme */
-    --primary: 200 90% 55%;
-    --primary-dark: 200 85% 45%;
-    --primary-foreground: 220 30% 5%;
+    /* Brand Colors - Pastel Theme */
+    --primary: 280 45% 75%;
+    --primary-dark: 280 45% 65%;
+    --primary-foreground: 0 0% 98%;
 
-    /* Secondary System */
-    --secondary: 220 15% 20%;
-    --secondary-foreground: 210 25% 95%;
+    /* Secondary System - Soft Pink */
+    --secondary: 320 25% 88%;
+    --secondary-foreground: 220 15% 25%;
 
-    /* Muted System */
-    --muted: 220 15% 15%;
-    --muted-foreground: 210 15% 65%;
+    /* Muted System - Neutral Pastels */
+    --muted: 320 15% 90%;
+    --muted-foreground: 220 10% 55%;
 
-    /* Accent System */
-    --accent: 170 85% 45%;
-    --accent-foreground: 220 30% 5%;
+    /* Accent System - Soft Mint */
+    --accent: 140 35% 75%;
+    --accent-foreground: 220 15% 25%;
 
-    /* Status Colors */
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --success: 140 70% 50%;
-    --warning: 45 90% 55%;
+    /* Status Colors - Pastel Variants */
+    --destructive: 355 55% 75%;
+    --destructive-foreground: 0 0% 98%;
+    --success: 140 40% 75%;
+    --warning: 45 55% 75%;
 
     /* Form Elements */
-    --border: 220 15% 20%;
-    --input: 220 20% 12%;
-    --ring: 200 90% 55%;
+    --border: 320 20% 85%;
+    --input: 330 15% 95%;
+    --ring: 280 45% 75%;
 
     /* Spacing & Effects */
     --radius: 0.75rem;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     
-    /* Gradients */
+    /* Gradients - Soft Pastel Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
     --gradient-hero: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--background-secondary)) 100%);
     --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--card-secondary)) 100%);
     
-    /* Shadows */
-    --shadow-sm: 0 2px 8px hsl(var(--primary) / 0.05);
-    --shadow-md: 0 4px 20px hsl(var(--primary) / 0.1);
-    --shadow-lg: 0 8px 40px hsl(var(--primary) / 0.15);
-    --shadow-glow: 0 0 30px hsl(var(--primary) / 0.3);
+    /* Shadows - Gentle Pastel Shadows */
+    --shadow-sm: 0 2px 8px hsl(280 45% 75% / 0.08);
+    --shadow-md: 0 4px 20px hsl(280 45% 75% / 0.12);
+    --shadow-lg: 0 8px 40px hsl(280 45% 75% / 0.15);
+    --shadow-glow: 0 0 30px hsl(280 45% 75% / 0.25);
   }
 }
 
