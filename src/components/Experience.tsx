@@ -4,9 +4,21 @@ import { Calendar, MapPin } from "lucide-react";
 
 const experiences = [
   {
+    title: "Freelance",
+    company: "Self-Employed",
+    period: "September 2025 – Present",
+    location: "Malaysia",
+    type: "Freelance",
+    highlights: [
+      "Developing and managing websites, setting up VPN and server automation",
+      "Providing digital marketing solutions for clients"
+    ],
+    technologies: ["Web Development", "VPN Setup", "Server Automation", "Digital Marketing"]
+  },
+  {
     title: "DevOps Engineer",
     company: "Nazsoft Tech Sdn Bhd",
-    period: "2025 – Present",
+    period: "January – August 2025",
     location: "Malaysia",
     type: "Full-time",
     highlights: [
