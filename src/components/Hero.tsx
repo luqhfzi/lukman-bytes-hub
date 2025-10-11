@@ -82,6 +82,7 @@ const Hero = () => {
                 <Button 
                   variant="outline" 
                   size="lg"
+                  onClick={() => window.open('https://www.linkedin.com/in/lukhfzi', '_blank')}
                   className="border-card-border hover:bg-card-secondary"
                 >
                   <Linkedin className="mr-2 h-4 w-4" />
