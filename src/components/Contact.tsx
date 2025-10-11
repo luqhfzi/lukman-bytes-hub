@@ -99,13 +99,21 @@ const Contact = () => {
                     </div>
                   </div>
 
-                  <div className="pt-4 border-t border-card-border">
+                  <div className="pt-4 border-t border-card-border space-y-2">
                     <Button 
                       className="w-full bg-primary hover:bg-primary-dark text-primary-foreground"
-                      onClick={() => console.log('Download CV')}
+                      onClick={() => window.open('https://drive.google.com/file/d/1bLwxBYzM7LwLsvf5FZ5XJ82pAC1NKAnL/view?usp=sharing', '_blank')}
                     >
                       <Download className="mr-2 h-4 w-4" />
-                      Download Full CV
+                      Download CV
+                    </Button>
+                    <Button 
+                      className="w-full"
+                      variant="outline"
+                      onClick={() => window.open('https://drive.google.com/file/d/1AqkjMOb4ZnM8h8XkTeC6hH-zcXIxhz_j/view?usp=sharing', '_blank')}
+                    >
+                      <Download className="mr-2 h-4 w-4" />
+                      Download Retail CV
                     </Button>
                   </div>
                 </CardContent>

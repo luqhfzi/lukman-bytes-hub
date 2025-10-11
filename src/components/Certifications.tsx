@@ -4,6 +4,20 @@ import { Award, Calendar } from "lucide-react";
 
 const certifications = [
   {
+    title: "Food Handler Training Course",
+    issuer: "Malaysia Health Certification",
+    date: "9 May 2025",
+    category: "Health",
+    recent: true
+  },
+  {
+    title: "Typhoid Injection Certificate",
+    issuer: "Malaysia Health Certification",
+    date: "13 May 2025",
+    category: "Health",
+    recent: true
+  },
+  {
     title: "Certified Information Security Awareness Manager (CISAM)",
     issuer: "Information Security Awareness",
     date: "November 2024",
@@ -34,18 +48,27 @@ const certifications = [
 
 const education = [
   {
-    degree: "Bachelor of Computer Science (Hons.) in Computer Networking",
-    institution: "MARA University of Technology (UiTM) Shah Alam",
-    period: "2023 – 2025",
+    degree: "Bachelor of Computer Science (Hons.) Computer Networking",
+    institution: "Universiti Teknologi MARA (UiTM) Shah Alam",
+    period: "Oct 2021 – Jan 2025",
     cgpa: "3.06",
-    status: "current"
+    status: "graduated",
+    achievements: [
+      "Focus on advanced networking, security, and DevOps technologies",
+      "Completed capstone projects on network automation"
+    ]
   },
   {
-    degree: "Diploma in Information Technology (Digital Technology) – Networking",
-    institution: "Politeknik Sultan Idris Shah (PSIS), Sabak Bernam",
-    period: "2018 – 2022",
+    degree: "Diploma in Information Technology (Digital Technology) Networking",
+    institution: "Politeknik Sultan Idris Shah (PSIS) Sabak Bernam",
+    period: "Jun 2018 – Jul 2022",
     cgpa: "3.78",
-    achievement: "Dean's List every semester"
+    status: "graduated",
+    achievements: [
+      "Dean's List – Every Semester (CGPA Above 3.70)",
+      "2nd Place – Regional Science Competition (Parcel Management App)",
+      "Leadership Award – Cybersecurity Awareness Program (SULAM)"
+    ]
   }
 ];
 
@@ -76,12 +99,10 @@ const Certifications = () => {
                   <CardHeader>
                     <div className="flex items-start justify-between mb-2">
                       <Badge 
-                        variant={edu.status === 'current' ? 'default' : 'secondary'}
-                        className={`text-xs ${
-                          edu.status === 'current' ? 'bg-primary text-primary-foreground' : ''
-                        }`}
+                        variant="secondary"
+                        className="text-xs"
                       >
-                        {edu.status === 'current' ? 'Current' : 'Graduated'}
+                        Graduated
                       </Badge>
                     </div>
                     <CardTitle className="text-lg text-foreground leading-tight">
@@ -95,16 +116,19 @@ const Certifications = () => {
                         <Calendar className="h-4 w-4" />
                         <span>{edu.period}</span>
                       </div>
-                      <div className="flex items-center gap-4">
-                        <Badge variant="outline" className="text-xs border-success text-success">
-                          CGPA: {edu.cgpa}
-                        </Badge>
-                        {edu.achievement && (
-                          <Badge variant="outline" className="text-xs border-warning text-warning">
-                            🏆 {edu.achievement}
-                          </Badge>
-                        )}
-                      </div>
+                      <Badge variant="outline" className="text-xs border-success text-success">
+                        CGPA: {edu.cgpa}
+                      </Badge>
+                      {edu.achievements && (
+                        <div className="space-y-1 mt-3">
+                          {edu.achievements.map((achievement, idx) => (
+                            <div key={idx} className="text-sm text-muted-foreground flex items-start gap-2">
+                              <span className="text-primary">•</span>
+                              <span>{achievement}</span>
+                            </div>
+                          ))}
+                        </div>
+                      )}
                     </div>
                   </CardContent>
                 </Card>
@@ -129,6 +153,7 @@ const Certifications = () => {
                         className={`text-xs ${
                           cert.category === 'Security' ? 'bg-destructive/10 text-destructive' :
                           cert.category === 'Networking' ? 'bg-primary/10 text-primary' :
+                          cert.category === 'Health' ? 'bg-success/10 text-success' :
                           'bg-muted'
                         }`}
                       >

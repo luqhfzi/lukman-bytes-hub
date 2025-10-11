@@ -4,11 +4,6 @@ import { Mail, Phone, MapPin, Download, Github, Linkedin } from "lucide-react";
 import profileImage from "@/assets/profile-hero.jpg";
 
 const Hero = () => {
-  const handleDownloadCV = () => {
-    // This would normally trigger a CV download
-    console.log("Download CV clicked");
-  };
-
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero py-20">
       <div className="container mx-auto px-4">
@@ -30,15 +25,15 @@ const Hero = () => {
                     DevOps Engineer
                   </h2>
                   <p className="text-lg text-muted-foreground">
-                    Network Engineer | IT Support Specialist
+                    Network Engineer | IT Support | Retail Crew
                   </p>
                 </div>
               </div>
 
               <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
-                Passionate DevOps Engineer with expertise in automation, network configuration, 
-                and system optimization. Experienced in Laravel deployment automation using Ansible, 
-                reducing setup time by 80%.
+                Dedicated and adaptable professional with experience in DevOps, IT infrastructure, and retail operations. 
+                Skilled in automation, server management, and customer service. Strong analytical and teamwork abilities 
+                with proven results in both technical and front-line environments.
               </p>
 
               {/* Contact Info */}
@@ -61,11 +56,20 @@ const Hero = () => {
               <div className="flex flex-wrap gap-4">
                 <Button 
                   size="lg" 
-                  onClick={handleDownloadCV}
+                  onClick={() => window.open('https://drive.google.com/file/d/1bLwxBYzM7LwLsvf5FZ5XJ82pAC1NKAnL/view?usp=sharing', '_blank')}
                   className="bg-primary hover:bg-primary-dark text-primary-foreground shadow-lg hover:shadow-glow transition-all duration-300"
                 >
                   <Download className="mr-2 h-4 w-4" />
                   Download CV
+                </Button>
+                <Button 
+                  size="lg"
+                  variant="outline"
+                  onClick={() => window.open('https://drive.google.com/file/d/1AqkjMOb4ZnM8h8XkTeC6hH-zcXIxhz_j/view?usp=sharing', '_blank')}
+                  className="border-card-border hover:bg-card-secondary"
+                >
+                  <Download className="mr-2 h-4 w-4" />
+                  Retail CV
                 </Button>
                 <Button 
                   variant="outline" 

@@ -13,52 +13,46 @@ import {
 
 const skillCategories = [
   {
-    title: "Networking & Configuration",
-    icon: Network,
-    color: "text-primary",
-    skills: ["Cisco", "VLANs", "Firewalls", "Routing & Switching", "Router", "Switch", "Server", "Cloudflared", "OpenVPN"]
-  },
-  {
-    title: "DevOps & Virtualization",
+    title: "DevOps & Systems",
     icon: Server,
-    color: "text-accent",
-    skills: ["Ansible", "Proxmox", "VMware", "Docker", "Linux/Unix", "Windows Server", "Elasticsearch"]
-  },
-  {
-    title: "Monitoring & Tools",
-    icon: Monitor,
-    color: "text-success",
-    skills: ["Zabbix", "ELK Stack", "Git", "Supervisor", "Wireshark", "Nmap", "Autopsy"]
-  },
-  {
-    title: "Databases & Systems",
-    icon: Database,
-    color: "text-warning",
-    skills: ["MySQL", "Redis", "Linux", "System Administration", "Troubleshooting", "Automation"]
-  },
-  {
-    title: "Cybersecurity Tools",
-    icon: Shield,
-    color: "text-destructive",
-    skills: ["Wireshark", "Nmap", "Autopsy", "Locust", "Zaproxy", "Security Analysis"]
-  },
-  {
-    title: "Programming",
-    icon: Code,
     color: "text-primary",
-    skills: ["Bash", "Python", "C", "C++", "HTML", "Scripting", "Automation"]
+    skills: ["Ansible", "Docker", "Proxmox", "Linux", "Elasticsearch"]
   },
   {
-    title: "Design & Tools",
-    icon: Palette,
+    title: "Networking",
+    icon: Network,
     color: "text-accent",
-    skills: ["Canva", "Photoshop", "Draw.io", "Documentation", "System Design"]
+    skills: ["Router & Switch Configuration", "OpenVPN", "Cloudflared"]
+  },
+  {
+    title: "Programming & Scripting",
+    icon: Code,
+    color: "text-success",
+    skills: ["Bash", "Python", "C/C++", "HTML"]
+  },
+  {
+    title: "Security & Tools",
+    icon: Shield,
+    color: "text-warning",
+    skills: ["Wireshark", "Nmap", "Autopsy", "Zaproxy"]
+  },
+  {
+    title: "Design & Documentation",
+    icon: Palette,
+    color: "text-primary",
+    skills: ["Canva", "Photoshop", "Draw.io"]
+  },
+  {
+    title: "Soft Skills",
+    icon: Globe,
+    color: "text-accent",
+    skills: ["Teamwork", "Communication", "Customer Service", "Problem Solving"]
   },
   {
     title: "Languages",
     icon: Globe,
     color: "text-success",
-    skills: ["Bahasa Melayu (Fluent)", "English (Fluent)", "Mandarin (Basic)"]
+    skills: ["Bahasa Melayu (Fluent)", "English (Fluent)", "Indonesian (Intermediate)", "Mandarin (Basic)"]
   }
 ];
 

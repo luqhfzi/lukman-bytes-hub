@@ -30,48 +30,87 @@ const experiences = [
   {
     title: "Intern",
     company: "Nazsoft Tech Sdn Bhd",
-    period: "2024",
+    period: "September 2024 – January 2025",
     location: "Malaysia",
     type: "Internship",
     highlights: [
-      "Configured firewalls, routers, switches, and servers, strengthening network security and system efficiency",
-      "Assisted in Proxmox virtualization setup and VM management, improving resource efficiency"
+      "Configured firewalls, routers, switches, and servers, improving security and efficiency",
+      "Assisted in Proxmox virtualization setup and VM management"
     ],
     technologies: ["Proxmox", "Networking", "Virtualization", "Security"]
   },
   {
+    title: "F&B / Retail Crew",
+    company: "MyNews",
+    period: "June – July 2025",
+    location: "Malaysia",
+    type: "Part-time",
+    highlights: [
+      "Provided excellent customer service and handled POS transactions",
+      "Maintained cleanliness and ensured food preparation met hygiene standards",
+      "Assisted in daily store operations and inventory management"
+    ],
+    technologies: ["Customer Service", "POS Systems", "Inventory Management"]
+  },
+  {
+    title: "Promoter",
+    company: "BITC",
+    period: "January – August 2024",
+    location: "Malaysia",
+    type: "Part-time",
+    highlights: [
+      "Assisted customers with product selection and inquiries",
+      "Handled stock arrangement, restocking, and cashier duties",
+      "Maintained store organization and ensured smooth daily operations"
+    ],
+    technologies: ["Customer Service", "Sales", "Retail Operations"]
+  },
+  {
+    title: "Retail Assistant",
+    company: "Econsave Supermarket",
+    period: "August 2023",
+    location: "Malaysia",
+    type: "Part-time",
+    highlights: [
+      "Achieved top sales performance, exceeding monthly targets by 25%",
+      "Delivered strong customer service and product knowledge to drive loyalty",
+      "Organized stock and maintained a clean, efficient retail environment"
+    ],
+    technologies: ["Sales", "Customer Service", "Inventory Management"]
+  },
+  {
     title: "Field Support Technician",
-    company: "E-Content",
-    period: "2022 – 2024",
+    company: "E-Content (M) Sdn. Bhd.",
+    period: "2023 – 2024",
     location: "Malaysia",
     type: "Full-time",
     highlights: [
-      "Maintained IT systems across departments, supporting 3,000+ users",
-      "Performed system upgrades and decommissioning of legacy equipment"
+      "Maintained IT systems across departments supporting 3,000+ users",
+      "Upgraded and decommissioned systems and hardware efficiently"
     ],
     technologies: ["IT Support", "System Maintenance", "Hardware"]
   },
   {
     title: "Field Support Technician",
     company: "UiTM Dengkil",
-    period: "2022",
+    period: "March 2023",
     location: "Malaysia",
     type: "Contract",
     highlights: [
-      "Installed and configured PCs for migration projects",
-      "Provided on-site support to enhance system accessibility and user experience"
+      "Installed and configured PCs for migration",
+      "Provided on-site support to ensure accessibility and smooth operations"
     ],
     technologies: ["PC Configuration", "System Migration", "On-site Support"]
   },
   {
     title: "Project Manager (Intern)",
-    company: "Loranet Technologies",
-    period: "2022",
+    company: "Loranet Technologies PLT",
+    period: "January – May 2021",
     location: "Malaysia",
     type: "Internship",
     highlights: [
-      "Led a team as Project Manager to deliver a financial system prototype",
-      "Managed project timelines and resources, successfully meeting all requirements"
+      "Led a team in developing a financial system prototype",
+      "Managed project timelines and successfully met all deliverables"
     ],
     technologies: ["Project Management", "Financial Systems", "Team Leadership"]
   }
