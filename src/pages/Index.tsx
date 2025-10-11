@@ -17,14 +17,14 @@ const Index = () => {
         <section id="experience">
           <Experience />
         </section>
+        <section id="education">
+          <Certifications />
+        </section>
         <section id="skills">
           <Skills />
         </section>
         <section id="projects">
           <Projects />
-        </section>
-        <section id="education">
-          <Certifications />
         </section>
         <section id="contact">
           <Contact />
@@ -36,7 +36,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center text-muted-foreground">
             <p>&copy; 2025 Lukman Hafizi Bin Ramli. All rights reserved.</p>
-            <p className="text-sm mt-2">DevOps Engineer | Network Engineer | IT Support | Retail Crew</p>
+            <p className="text-sm mt-2">DevOps Engineer | Network Engineer | IT Support</p>
           </div>
         </div>
       </footer>
