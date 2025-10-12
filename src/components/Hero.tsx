@@ -14,8 +14,6 @@ const Hero = () => {
               <div className="space-y-4">
                 <h1 className="text-5xl lg:text-6xl font-bold tracking-tight">
                   <span className="text-primary">Lukman Hafizi</span>
-                  <br />
-                  <span className="text-foreground">Bin Ramli</span>
                 </h1>
                 <div className="space-y-2">
                   <h2 className="text-2xl lg:text-3xl font-semibold text-muted-foreground">
@@ -92,7 +90,7 @@ const Hero = () => {
                 <div className="relative bg-gradient-card rounded-3xl p-8 border border-card-border shadow-lg">
                   <img
                     src={profileImage}
-                    alt="Lukman Hafizi Bin Ramli - DevOps Engineer"
+                    alt="Lukman Hafizi - DevOps Engineer"
                     className="w-full h-auto rounded-2xl shadow-md"
                   />
                 </div>
