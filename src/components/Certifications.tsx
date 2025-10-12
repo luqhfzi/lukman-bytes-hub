@@ -76,109 +76,57 @@ const Certifications = () => {
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl font-bold text-foreground mb-4">
-              Education & Certifications
+              Certifications
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Continuous learning and professional development in networking, security, and technology
+              Professional certifications in networking, security, and health standards
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Education */}
-            <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-foreground mb-6">Education</h3>
-              {education.map((edu, index) => (
-                <Card 
-                  key={index}
-                  className="bg-gradient-card border-card-border hover:shadow-lg transition-all duration-300 animate-fade-in"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <CardHeader>
-                    <div className="flex items-start justify-between mb-2">
-                      <Badge 
-                        variant="secondary"
-                        className="text-xs"
-                      >
-                        Graduated
+          <div className="grid md:grid-cols-2 gap-6">
+            {certifications.map((cert, index) => (
+              <Card 
+                key={index}
+                className={`bg-gradient-card border-card-border hover:shadow-lg transition-all duration-300 animate-fade-in hover-scale ${
+                  cert.recent ? 'ring-1 ring-primary/20' : ''
+                }`}
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <CardHeader>
+                  <div className="flex items-start justify-between mb-2">
+                    <Badge 
+                      variant="secondary"
+                      className={`text-xs ${
+                        cert.category === 'Security' ? 'bg-destructive/10 text-destructive' :
+                        cert.category === 'Networking' ? 'bg-primary/10 text-primary' :
+                        cert.category === 'Health' ? 'bg-success/10 text-success' :
+                        'bg-muted'
+                      }`}
+                    >
+                      {cert.category}
+                    </Badge>
+                    {cert.recent && (
+                      <Badge variant="outline" className="text-xs border-primary text-primary">
+                        Recent
                       </Badge>
-                    </div>
-                    <CardTitle className="text-lg text-foreground leading-tight">
-                      {edu.degree}
-                    </CardTitle>
-                    <p className="text-primary font-semibold">{edu.institution}</p>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-2">
-                      <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <Calendar className="h-4 w-4" />
-                        <span>{edu.period}</span>
-                      </div>
-                      <Badge variant="outline" className="text-xs border-success text-success">
-                        CGPA: {edu.cgpa}
-                      </Badge>
-                      {edu.achievements && (
-                        <div className="space-y-1 mt-3">
-                          {edu.achievements.map((achievement, idx) => (
-                            <div key={idx} className="text-sm text-muted-foreground flex items-start gap-2">
-                              <span className="text-primary">•</span>
-                              <span>{achievement}</span>
-                            </div>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-
-            {/* Certifications */}
-            <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-foreground mb-6">Certifications</h3>
-              {certifications.map((cert, index) => (
-                <Card 
-                  key={index}
-                  className={`bg-gradient-card border-card-border hover:shadow-lg transition-all duration-300 animate-fade-in ${
-                    cert.recent ? 'ring-1 ring-primary/20' : ''
-                  }`}
-                  style={{ animationDelay: `${(index + education.length) * 0.1}s` }}
-                >
-                  <CardHeader>
-                    <div className="flex items-start justify-between mb-2">
-                      <Badge 
-                        variant="secondary"
-                        className={`text-xs ${
-                          cert.category === 'Security' ? 'bg-destructive/10 text-destructive' :
-                          cert.category === 'Networking' ? 'bg-primary/10 text-primary' :
-                          cert.category === 'Health' ? 'bg-success/10 text-success' :
-                          'bg-muted'
-                        }`}
-                      >
-                        {cert.category}
-                      </Badge>
-                      {cert.recent && (
-                        <Badge variant="outline" className="text-xs border-primary text-primary">
-                          Recent
-                        </Badge>
-                      )}
-                    </div>
-                    <CardTitle className="text-lg text-foreground leading-tight">
-                      {cert.title}
-                    </CardTitle>
-                    <p className="text-primary font-semibold">{cert.issuer}</p>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <Award className="h-4 w-4 text-primary" />
-                      <span>{cert.date}</span>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+                    )}
+                  </div>
+                  <CardTitle className="text-lg text-foreground leading-tight">
+                    {cert.title}
+                  </CardTitle>
+                  <p className="text-primary font-semibold">{cert.issuer}</p>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <Award className="h-4 w-4 text-primary" />
+                    <span>{cert.date}</span>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </div>

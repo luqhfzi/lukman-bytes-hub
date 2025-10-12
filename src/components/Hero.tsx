@@ -12,9 +12,6 @@ const Hero = () => {
             {/* Content */}
             <div className="space-y-8 animate-fade-in">
               <div className="space-y-4">
-                <Badge variant="secondary" className="w-fit">
-                  Available for new opportunities
-                </Badge>
                 <h1 className="text-5xl lg:text-6xl font-bold tracking-tight">
                   <span className="text-primary">Lukman Hafizi</span>
                   <br />
@@ -22,11 +19,8 @@ const Hero = () => {
                 </h1>
                 <div className="space-y-2">
                   <h2 className="text-2xl lg:text-3xl font-semibold text-muted-foreground">
-                    DevOps Engineer
+                    DevOps Engineer | Network Engineer | IT Support
                   </h2>
-                  <p className="text-lg text-muted-foreground">
-                    Network Engineer | IT Support | Retail Crew
-                  </p>
                 </div>
               </div>
 
