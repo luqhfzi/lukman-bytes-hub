@@ -17,7 +17,7 @@ const Hero = () => {
                 </h1>
                 <div className="space-y-2">
                   <h2 className="text-2xl lg:text-3xl font-semibold text-muted-foreground">
-                    DevOps Engineer | Network Engineer | IT Support
+                    DevOps Engineer | Network Engineer
                   </h2>
                 </div>
               </div>
