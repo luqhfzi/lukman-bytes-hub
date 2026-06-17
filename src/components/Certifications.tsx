@@ -43,6 +43,12 @@ const certifications = [
     issuer: "Cisco",
     date: "August 2020",
     category: "Networking"
+  },
+  {
+    title: "Introduction to Cybersecurity",
+    issuer: "Cisco",
+    date: "02 Feb 2020",
+    category: "Security"
   }
 ];
 
