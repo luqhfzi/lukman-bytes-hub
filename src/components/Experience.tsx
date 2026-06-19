@@ -24,9 +24,10 @@ const experiences = [
     type: "Freelance",
     highlights: [
       "Developing and managing websites, setting up VPN and server automation",
-      "Providing digital marketing solutions for clients"
+      "Providing digital marketing solutions for clients",
+      "Taught robotics and IoT programming using C++ on ESP microcontrollers"
     ],
-    technologies: ["Web Development", "VPN Setup", "Server Automation", "Digital Marketing"]
+    technologies: ["Web Development", "VPN Setup", "Server Automation", "Digital Marketing", "C++", "Robotics", "IoT", "ESP Microcontrollers"]
   },
   {
     title: "DevOps Engineer",
