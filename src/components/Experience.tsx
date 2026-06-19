@@ -73,11 +73,11 @@ const experiences = [
     location: "Malaysia",
     type: "Part-time",
     highlights: [
-      "Assisted customers with product selection and inquiries",
-      "Handled stock arrangement, restocking, and cashier duties",
-      "Maintained store organization and ensured smooth daily operations"
+      "Achieved top sales performance, exceeding monthly targets by 25%",
+      "Delivered strong customer service and product knowledge to drive loyalty",
+      "Organized stock and maintained a clean, efficient retail environment"
     ],
-    technologies: ["Customer Service", "Sales", "Retail Operations"]
+    technologies: ["Sales", "Customer Service", "Inventory Management"]
   },
   {
     title: "Retail Assistant",
@@ -86,11 +86,11 @@ const experiences = [
     location: "Malaysia",
     type: "Part-time",
     highlights: [
-      "Achieved top sales performance, exceeding monthly targets by 25%",
-      "Delivered strong customer service and product knowledge to drive loyalty",
-      "Organized stock and maintained a clean, efficient retail environment"
+      "Assisted customers with product selection and inquiries",
+      "Handled stock arrangement, restocking, and cashier duties",
+      "Maintained store organization and ensured smooth daily operations"
     ],
-    technologies: ["Sales", "Customer Service", "Inventory Management"]
+    technologies: ["Customer Service", "Sales", "Retail Operations"]
   },
   {
     title: "Field Support Technician",
