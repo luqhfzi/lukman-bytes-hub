@@ -4,6 +4,19 @@ import { Calendar, MapPin } from "lucide-react";
 
 const experiences = [
   {
+    title: "Network Support Engineer",
+    company: "Cet Development Sdn Bhd",
+    period: "November 2026 – Present",
+    location: "Malaysia",
+    type: "Full-time",
+    highlights: [
+      "Maintained hospital network using Cisco and TRENDnet devices to ensure stable connectivity",
+      "Monitored and resolved network issues using Zabbix and PRTG",
+      "Automated network configuration tasks using Python (Netmiko)"
+    ],
+    technologies: ["Cisco", "TRENDnet", "Zabbix", "PRTG", "Python", "Netmiko"]
+  },
+  {
     title: "Freelance",
     company: "Self-Employed",
     period: "September 2025 – Present",
