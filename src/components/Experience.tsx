@@ -100,7 +100,9 @@ const experiences = [
     type: "Full-time",
     highlights: [
       "Maintained IT systems across departments supporting 3,000+ users",
-      "Upgraded and decommissioned systems and hardware efficiently",
+      "Upgraded and decommissioned systems and hardware efficiently"
+    ],
+    deployments: [
       "Government deployment – Ministry of Home Affairs of Malaysia (January – February 2024)",
       "Government deployment – Forestry Department of Peninsular Malaysia (July – October 2023)",
       "Government deployment – Ministry of Home Affairs of Malaysia (February – March 2023)"
@@ -188,6 +190,15 @@ const Experience = () => {
                       </li>
                     ))}
                   </ul>
+                  {"deployments" in exp && (exp as any).deployments && (
+                    <div className="mb-4 space-y-1">
+                      {(exp as any).deployments.map((d: string, idx: number) => (
+                        <p key={idx} className="font-bold italic text-foreground">
+                          {d}
+                        </p>
+                      ))}
+                    </div>
+                  )}
                   <div className="flex flex-wrap gap-2">
                     {exp.technologies.map((tech, idx) => (
                       <Badge key={idx} variant="outline" className="text-xs border-primary/30 text-primary">
