@@ -100,7 +100,9 @@ const experiences = [
     type: "Full-time",
     highlights: [
       "Maintained IT systems across departments supporting 3,000+ users",
-      "Upgraded and decommissioned systems and hardware efficiently",
+      "Upgraded and decommissioned systems and hardware efficiently"
+    ],
+    deployments: [
       "Government deployment – Ministry of Home Affairs of Malaysia (January – February 2024)",
       "Government deployment – Forestry Department of Peninsular Malaysia (July – October 2023)",
       "Government deployment – Ministry of Home Affairs of Malaysia (February – March 2023)"
