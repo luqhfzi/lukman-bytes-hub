@@ -39,6 +39,11 @@ const experiences = [
       "Automated server deployment and Laravel application configuration using Ansible, reducing setup time by 80%",
       "Improved system reliability by troubleshooting and optimizing network and server performance"
     ],
+    deployments: [
+      "Malaysia External Trade Development Corporation (MATRADE)",
+      "Perbadanan Tabung Pembangunan Kemahiran",
+      "TOKYO AUTO SALON 2025"
+    ],
     technologies: ["Ansible", "Laravel", "Linux", "Server Management"]
   },
   {
@@ -50,6 +55,10 @@ const experiences = [
     highlights: [
       "Configured firewalls, routers, switches, and servers, improving security and efficiency",
       "Assisted in Proxmox virtualization setup and VM management"
+    ],
+    deployments: [
+      "Department of Fisheries Malaysia",
+      "TOKYO AUTO SALON 2024"
     ],
     technologies: ["Proxmox", "Networking", "Virtualization", "Security"]
   },
