@@ -193,7 +193,7 @@ const Experience = () => {
                   {"deployments" in exp && (exp as any).deployments && (
                     <div className="mb-4 space-y-1">
                       {(exp as any).deployments.map((d: string, idx: number) => (
-                        <p key={idx} className="font-bold italic text-foreground">
+                        <p key={idx} className="font-bold italic text-muted-foreground">
                           {d}
                         </p>
                       ))}
