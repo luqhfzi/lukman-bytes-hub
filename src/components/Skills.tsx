@@ -43,6 +43,12 @@ const skillCategories = [
     skills: ["Canva", "Photoshop", "Draw.io"]
   },
   {
+    title: "AI Tools",
+    icon: Monitor,
+    color: "text-warning",
+    skills: ["Claude Code", "Claude AI", "ChatGPT"]
+  },
+  {
     title: "Soft Skills",
     icon: Globe,
     color: "text-accent",
