@@ -190,6 +190,15 @@ const Experience = () => {
                       </li>
                     ))}
                   </ul>
+                  {"deployments" in exp && (exp as any).deployments && (
+                    <div className="mb-4 space-y-1">
+                      {(exp as any).deployments.map((d: string, idx: number) => (
+                        <p key={idx} className="font-bold italic text-foreground">
+                          {d}
+                        </p>
+                      ))}
+                    </div>
+                  )}
                   <div className="flex flex-wrap gap-2">
                     {exp.technologies.map((tech, idx) => (
                       <Badge key={idx} variant="outline" className="text-xs border-primary/30 text-primary">
