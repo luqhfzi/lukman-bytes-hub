@@ -48,22 +48,13 @@ const Hero = () => {
               <div className="flex flex-wrap gap-4">
                 <Button 
                   size="lg" 
-                  onClick={() => window.open('https://drive.google.com/file/d/1bLwxBYzM7LwLsvf5FZ5XJ82pAC1NKAnL/view?usp=sharing', '_blank')}
+                  onClick={() => window.open('https://drive.google.com/drive/folders/1jedXb_XaZIxX-gAhSuC_MjSH8T2c1YgM?usp=sharing', '_blank')}
                   className="bg-primary hover:bg-primary-dark text-primary-foreground shadow-lg hover:shadow-glow transition-all duration-300"
                 >
                   <Download className="mr-2 h-4 w-4" />
-                  Download CV
+                  Download Resume
                 </Button>
-                <Button 
-                  size="lg"
-                  variant="outline"
-                  onClick={() => window.open('https://drive.google.com/file/d/1AqkjMOb4ZnM8h8XkTeC6hH-zcXIxhz_j/view?usp=sharing', '_blank')}
-                  className="border-card-border hover:bg-card-secondary"
-                >
-                  <Download className="mr-2 h-4 w-4" />
-                  Retail CV
-                </Button>
-                <Button 
+                <Button
                   variant="outline" 
                   size="lg"
                   className="border-card-border hover:bg-card-secondary"
