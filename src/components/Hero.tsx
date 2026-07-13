@@ -57,6 +57,7 @@ const Hero = () => {
                 <Button
                   variant="outline" 
                   size="lg"
+                  onClick={() => window.open('https://github.com/luqhfzi', '_blank')}
                   className="border-card-border hover:bg-card-secondary"
                 >
                   <Github className="mr-2 h-4 w-4" />
