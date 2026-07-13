@@ -72,6 +72,15 @@ const Hero = () => {
                   <Linkedin className="mr-2 h-4 w-4" />
                   LinkedIn
                 </Button>
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  onClick={() => window.open('https://work.luqhfzi.com/', '_blank')}
+                  className="border-card-border hover:bg-card-secondary"
+                >
+                  <Briefcase className="mr-2 h-4 w-4" />
+                  Work
+                </Button>
               </div>
             </div>
 
