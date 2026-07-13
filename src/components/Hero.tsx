@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Mail, Phone, MapPin, Download, Github, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin, Download, Github, Linkedin, Briefcase } from "lucide-react";
 import profileImage from "@/assets/profile-hero.jpg";
 
 const Hero = () => {
